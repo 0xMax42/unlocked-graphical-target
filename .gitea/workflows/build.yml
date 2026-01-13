@@ -1,0 +1,33 @@
+name: Upload Assets
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  upload-deb-package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.release.tag_name }}
+          fetch-depth: 0
+
+      - name: Install dependencies
+        run: |
+          apt-get update -qq
+          apt-get install -yq debcrafter-0 tea-pkg-0
+
+      - name: Build DEB package
+        run: |
+          debcrafter run --container-exec docker
+
+      - name: Upload DEB package
+        env:
+          GITEA_BASE_URL: https://git.0xmax42.io
+          GITEA_TOKEN: ${{ secrets.RELEASE_PUBLISH_TOKEN }}
+        run: |
+          tea-pkg publish-deb debrepo ./dist/*.deb -o
+
+          tea-pkg release-asset maxp/unlocked-graphical-target ${{ github.event.release.tag_name }} ./dist/*.deb
