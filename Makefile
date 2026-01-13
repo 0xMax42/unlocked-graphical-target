@@ -8,7 +8,7 @@ RM ?= rm -f
 
 SCRIPTS_SBIN := sbin/wait-for-unlock.sh
 SCRIPTS_SLEEP := system-sleep/unlock-gate.sh
-UNITS := system/unlocked-graphical.target
+UNITS := system/unlocked-graphical.target system/unlocked-graphical-gate.service
 
 .PHONY: all build test check install uninstall
 
@@ -29,9 +29,10 @@ install:
 		"$(DESTDIR)$(SYSTEMD_SLEEP_DIR)"
 	$(INSTALL) -m 0755 $(SCRIPTS_SBIN) "$(DESTDIR)$(SBINDIR)/wait-for-unlock.sh"
 	$(INSTALL) -m 0755 $(SCRIPTS_SLEEP) "$(DESTDIR)$(SYSTEMD_SLEEP_DIR)/unlock-gate.sh"
-	$(INSTALL) -m 0644 $(UNITS) "$(DESTDIR)$(SYSTEMD_SYSTEM_UNITDIR)/unlocked-graphical.target"
+	$(INSTALL) -m 0644 $(UNITS) "$(DESTDIR)$(SYSTEMD_SYSTEM_UNITDIR)/"
 
 uninstall:
 	$(RM) "$(DESTDIR)$(SBINDIR)/wait-for-unlock.sh"
 	$(RM) "$(DESTDIR)$(SYSTEMD_SLEEP_DIR)/unlock-gate.sh"
 	$(RM) "$(DESTDIR)$(SYSTEMD_SYSTEM_UNITDIR)/unlocked-graphical.target"
+	$(RM) "$(DESTDIR)$(SYSTEMD_SYSTEM_UNITDIR)/unlocked-graphical-gate.service"

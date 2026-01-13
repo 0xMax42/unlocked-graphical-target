@@ -13,15 +13,8 @@ pre)
     systemctl stop unlocked-graphical.target || true
     ;;
 post)
-    log "post-resume: system resumed, waiting for unlocked graphical session"
-    (
-        if /usr/sbin/wait-for-unlock.sh; then
-            log "post-resume: unlocked graphical session detected, starting target"
-            systemctl start unlocked-graphical.target || true
-        else
-            log "post-resume: wait-for-unlock.sh failed"
-        fi
-    ) &
+    log "post-resume: scheduling unlock gate"
+    systemctl start --no-block unlocked-graphical-gate.service || true
     ;;
 *) ;;
 esac

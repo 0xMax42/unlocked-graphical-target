@@ -1,0 +1,8 @@
+[Unit]
+Description=Wait for unlocked graphical session after resume
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/wait-for-unlock.sh
+ExecStartPost=/bin/systemctl start unlocked-graphical.target
+RemainAfterExit=no
