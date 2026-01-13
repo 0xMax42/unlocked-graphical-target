@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.0-pre.3](https://git.0xmax42.io/maxp/unlocked-graphical-target/compare/v0.1.0-pre.2..v0.1.0-pre.3) (pre-release) - 2026-01-13
+
+### 🐛 Bug Fixes
+
+- *(system-sleep)* Run unlock wait in background after resume - ([6bcde52](https://git.0xmax42.io/maxp/unlocked-graphical-target/commit/6bcde521fc35065b1ad5ed35cc9408b4d41ebd5a))
+
 ## [0.1.0-pre.2](https://git.0xmax42.io/maxp/unlocked-graphical-target/compare/v0.1.0-pre.1..v0.1.0-pre.2) (pre-release) - 2026-01-13
 
 ### 🐛 Bug Fixes
