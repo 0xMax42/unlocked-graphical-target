@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [unreleased]
+## [0.1.0-pre.2](https://git.0xmax42.io/maxp/unlocked-graphical-target/compare/v0.1.0-pre.1..v0.1.0-pre.2) (pre-release) - 2026-01-13
 
 ### 🐛 Bug Fixes
 
