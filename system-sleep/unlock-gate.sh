@@ -8,7 +8,8 @@ pre)
     ;;
 post)
     # System just resumed → wait for unlock, then start target
-    /usr/sbin/wait-for-unlock.sh &&
+    sleep 5 &&
+        /usr/sbin/wait-for-unlock.sh &&
         systemctl start unlocked-graphical.target
     ;;
 *) ;;
