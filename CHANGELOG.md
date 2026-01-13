@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [unreleased]
+
+### 🐛 Bug Fixes
+
+- *(system-sleep)* Add logging and harden unlock gate handling - ([77f3df5](https://git.0xmax42.io/maxp/unlocked-graphical-target/commit/77f3df5166bedff3f96f7b760f571129ddabf85c))
+
 ## [0.1.0-pre.1](https://git.0xmax42.io/maxp/unlocked-graphical-target/compare/v0.1.0-pre.0..v0.1.0-pre.1) (pre-release) - 2026-01-13
 
 ### 🐛 Bug Fixes
