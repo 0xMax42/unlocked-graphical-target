@@ -1,7 +1,5 @@
 PREFIX ?= /usr
 SBINDIR ?= $(PREFIX)/sbin
-
-# Debian/systemd default unit locations
 SYSTEMD_SYSTEM_UNITDIR ?= $(PREFIX)/lib/systemd/system
 SYSTEMD_SLEEP_DIR ?= $(PREFIX)/lib/systemd/system-sleep
 
