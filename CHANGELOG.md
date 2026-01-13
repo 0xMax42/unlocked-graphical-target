@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.0-pre.4](https://git.0xmax42.io/maxp/unlocked-graphical-target/compare/v0.1.0-pre.3..v0.1.0-pre.4) (pre-release) - 2026-01-13
+
+### 🐛 Bug Fixes
+
+- *(systemd)* Move unlock wait to dedicated oneshot service - ([0393388](https://git.0xmax42.io/maxp/unlocked-graphical-target/commit/03933883ed901d2e572f2903a3601ab39a632bf5))
+
 ## [0.1.0-pre.3](https://git.0xmax42.io/maxp/unlocked-graphical-target/compare/v0.1.0-pre.2..v0.1.0-pre.3) (pre-release) - 2026-01-13
 
 ### 🐛 Bug Fixes
