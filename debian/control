@@ -1,0 +1,17 @@
+Source: unlocked-graphical-target
+Section: admin
+Priority: optional
+Maintainer: 0xMax42 <Mail@0xMax42.io>
+Standards-Version: 4.6.2
+Build-Depends: debhelper-compat (= 13)
+Homepage: https://git.0xmax42.io/maxp/unlocked-graphical-target
+Vcs-Git: https://git.0xmax42.io/maxp/unlocked-graphical-target.git
+Vcs-Browser: https://git.0xmax42.io/maxp/unlocked-graphical-target
+
+Package: unlocked-graphical-target
+Architecture: all
+Depends: systemd
+Description: Resume/unlock gate for graphical systemd sessions
+ This package provides a systemd sleep hook and target that ensure
+ certain services are started only after a graphical user session
+ exists and is unlocked after resume from suspend or hibernate.
