@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file.
 
 - Add project overview and usage to README - ([0a746b0](https://git.0xmax42.io/maxp/unlocked-graphical-target/commit/0a746b02222e2e701c8f158b411bf662b9395bf4))
 
+### ⚙️ Miscellaneous Tasks
+
+- *(workflows)* Sync releases between gitea and github - ([c5bd7c7](https://git.0xmax42.io/maxp/unlocked-graphical-target/commit/c5bd7c71d56767d3b1801cd94ae87e9f715cddbc))
+
 ## [0.1.0](https://git.0xmax42.io/maxp/unlocked-graphical-target/compare/v0.1.0-pre.4..v0.1.0) - 2026-01-18
 
 ### 🚀 Features
