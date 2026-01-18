@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [unreleased]
+
+### 📚 Documentation
+
+- Add project overview and usage to README - ([0a746b0](https://git.0xmax42.io/maxp/unlocked-graphical-target/commit/0a746b02222e2e701c8f158b411bf662b9395bf4))
+
 ## [0.1.0](https://git.0xmax42.io/maxp/unlocked-graphical-target/compare/v0.1.0-pre.4..v0.1.0) - 2026-01-18
 
 ### 🚀 Features
