@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 
 ### ⚙️ Miscellaneous Tasks
 
+- *(workflows)* Adjust deb publishing for prerelease handling - ([f9afabd](https://git.0xmax42.io/maxp/unlocked-graphical-target/commit/f9afabdef22f183ab4f04a136f085441e844caa0))
 - *(workflows)* Sync releases between gitea and github - ([c5bd7c7](https://git.0xmax42.io/maxp/unlocked-graphical-target/commit/c5bd7c71d56767d3b1801cd94ae87e9f715cddbc))
 
 ## [0.1.0](https://git.0xmax42.io/maxp/unlocked-graphical-target/compare/v0.1.0-pre.4..v0.1.0) - 2026-01-18
