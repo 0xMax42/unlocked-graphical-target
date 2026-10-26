@@ -85,7 +85,6 @@ Example service drop-in or unit:
 [Unit]
 Description=Example service that should run only after resume and unlock
 After=unlocked-graphical.target
-Wants=unlocked-graphical.target
 
 [Service]
 Type=simple
